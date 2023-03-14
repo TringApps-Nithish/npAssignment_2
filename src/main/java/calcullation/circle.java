@@ -1,20 +1,20 @@
 package calcullation;
 
+import declearinterface.calculates;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Circle implements Calculates {
+public class Circle implements calculates {
 
     private Logger l = Logger.getLogger("Switchch");
 
     private double sideOne;
     private double area;
     private double perimeter;
-    private String shapeName;
 
-    public Circle(String name, int side1) {
+    public void input(int side1) {
         sideOne = side1;
-        shapeName = name;
         area();
         perimeter();
     }

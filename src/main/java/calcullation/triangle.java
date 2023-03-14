@@ -1,9 +1,11 @@
 package calcullation;
 
+import declearinterface.calculates;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Triangle implements Calculates {
+public class Triangle implements calculates {
 
     private Logger l = Logger.getLogger("Switchch");
 
@@ -12,13 +14,11 @@ public class Triangle implements Calculates {
     private int sideThree;
     private int area;
     private int perimeter;
-    private String shapeName;
 
-    public Triangle(String name, int side1, int side2, int side3) {
+    public void input(int side1, int side2, int side3) {
         sideOne = side1;
         sideTwo = side2;
         sideThree = side3;
-        shapeName = name;
         area();
         perimeter();
     }

@@ -3,19 +3,19 @@ package calcullation;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Rectangle implements Calculates {
+import declearinterface.calculates;
+
+public class Rectangle implements calculates {
     private Logger l = Logger.getLogger("Switchch");
 
     private int sideOne;
     private int sideTwo;
     private int area;
-    private String shapeName;
     private int perimeter;
 
-    public Rectangle(String name, int side1, int side2) {
+    public void input(int side1, int side2) {
         sideOne = side1;
         sideTwo = side2;
-        shapeName = name;
         area();
         perimeter();
     }
