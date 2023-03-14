@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import declearinterface.calculates;
 
-public class rectangle implements calculates {
+public class Rectangle implements calculates {
     private Logger l = Logger.getLogger("Switchch");
 
     private int sideOne;

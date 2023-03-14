@@ -12,10 +12,6 @@ public class Switchch {
     private int side_2;
     private int side_3;
 
-    // public Switchch(int Choice)
-    // {
-    // choice=Choice;
-    // }
     public Switchch(int choice) {
         switch (choice) {
             case 1 -> {

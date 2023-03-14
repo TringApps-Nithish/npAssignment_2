@@ -5,7 +5,7 @@ import declearinterface.calculates;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class circle implements calculates {
+public class Circle implements calculates {
 
     private Logger l = Logger.getLogger("Switchch");
 

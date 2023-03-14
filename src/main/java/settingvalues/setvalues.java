@@ -1,8 +1,8 @@
 package settingvalues;
 
-import calcullation.circle;
-import calcullation.rectangle;
-import calcullation.triangle;
+import calcullation.Circle;
+import calcullation.Rectangle;
+import calcullation.Triangle;
 
 public class setvalues {
     private int sideOne;
@@ -15,7 +15,7 @@ public class setvalues {
         sideOne = side1;
         sideTwo = side2;
         sideThree = side3;
-        triangle obj = new triangle();
+        Triangle obj = new Triangle();
         obj.input(side1, side2, side3);
     }
 
@@ -23,14 +23,14 @@ public class setvalues {
         shapeName = name;
         sideOne = side1;
         sideTwo = side2;
-        rectangle obj = new rectangle();
+        Rectangle obj = new Rectangle();
         obj.input(side1, side2);
     }
 
     public setvalues(String name, int side1) {
         shapeName = name;
         sideOne = side1;
-        circle obj = new circle();
+        Circle obj = new Circle();
         obj.input(side1);
     }
 }
