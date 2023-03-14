@@ -11,7 +11,7 @@ public class circle implements calculates {
 
     private double sideOne;
     private double area;
-    private int perimeter;
+    private double perimeter;
 
     public void input(int side1) {
         sideOne = side1;
@@ -25,7 +25,7 @@ public class circle implements calculates {
     }
 
     public void perimeter() {
-        perimeter = (int) (2 * sideOne * 3.14);
+        perimeter = (2 * sideOne * 3.14);
         l.log(Level.INFO, () -> ("\n Perimeter Of Circle = " + perimeter));
     }
 
