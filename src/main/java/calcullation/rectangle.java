@@ -1,12 +1,15 @@
 package calcullation;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import declearinterface.calculates;
 
 public class rectangle implements calculates {
+    private Logger l = Logger.getLogger("Switchch");
 
     private int sideOne;
     private int sideTwo;
-
     private int area;
     private int perimeter;
 
@@ -19,12 +22,12 @@ public class rectangle implements calculates {
 
     public void area() {
         area = (sideOne * sideTwo);
-        System.out.printf("\n Area Of Rectangle  = " + area);
+        l.log(Level.INFO, () -> ("\n Area Of Rectangle  = " + area));
     }
 
     public void perimeter() {
         perimeter = (sideOne + sideTwo) * 2;
-        System.out.printf("\n Perimeter Of Rectangle = " + perimeter);
+        l.log(Level.INFO, () -> ("\n Perimeter Of Rectangle = " + perimeter));
     }
 
 }

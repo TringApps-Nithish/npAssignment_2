@@ -2,7 +2,12 @@ package calcullation;
 
 import declearinterface.calculates;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class triangle implements calculates {
+
+    private Logger l = Logger.getLogger("Switchch");
 
     private int sideOne;
     private int sideTwo;
@@ -20,12 +25,12 @@ public class triangle implements calculates {
 
     public void area() {
         area = (sideOne * sideTwo) / 2;
-        System.out.printf("\n Area Of Triangle  = " + area);
+        l.log(Level.INFO, () -> ("\n Area Of Triangle  = " + area));
     }
 
     public void perimeter() {
         perimeter = sideOne + sideTwo + sideThree;
-        System.out.printf("\n Perimeter Of Circle = " + perimeter);
+        l.log(Level.INFO, () -> ("\n Perimeter Of Circle = " + perimeter));
     }
 
 }
