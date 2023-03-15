@@ -18,8 +18,7 @@ public class Rectangle implements Calculates {
         shapeName = name;
         area();
         perimeter();
-    }
-
+        
     public void area() {
         area = (sideOne * sideTwo);
         l.log(Level.INFO, () -> ("\n Area Of Rectangle  = " + area));

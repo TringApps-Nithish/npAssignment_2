@@ -3,7 +3,7 @@ package mainclass;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-import switchch.Switchch;
+import switchch.Switching;
 
 public class Main {
 
@@ -16,7 +16,7 @@ public class Main {
             l.info("t...... Shapes Availabel ......\n 1.Triangle \n 2.Rectangle \n 3.Circle \n 4.Exit ");
             l.info("\n\n Enter Your Choice : ");
             Choice = sc.nextInt();
-            new Switchch(Choice);
+            Switching object = new Switching(Choice);
         }
     }
 }
