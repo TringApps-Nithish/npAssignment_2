@@ -1,11 +1,12 @@
 package gettingvalues;
 
 import java.util.logging.Logger;
-import java.util.Scanner;
 
-import calcullation.Circle;
-import calcullation.Rectangle;
-import calcullation.Triangle;
+import calculation.Circle;
+import calculation.Rectangle;
+import calculation.Triangle;
+
+import java.util.Scanner;
 
 public class Getvalues {
     private Scanner sc = new Scanner(System.in);
