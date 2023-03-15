@@ -3,10 +3,13 @@ package switchch;
 import java.util.logging.Logger;
 import gettingvalues.Getvalues;
 
-public class Switchch {
+public class Switching {
     private static Logger l = Logger.getLogger("Switchch");
+    private int choice;
 
-    public Switchch(int choice) {
+    public Switching(int choice) {
+        this.choice = choice;
+
         Getvalues nextmove = new Getvalues();
         switch (choice) {
 
